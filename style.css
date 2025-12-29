@@ -11,7 +11,7 @@
     display: flex;
     margin: 0;
     padding: 0;   
-    background-color: lightgray;   
+    background-color: transparent;   
     min-height: 100vh; 
 }
 
@@ -23,8 +23,8 @@
 
 .sidebar{
     background-color: lightblue;
-    width: 200px;
-    padding: 50px;
+    width: 220px;
+    padding: 20px;
 }
 
 .sidebar ul {
@@ -32,11 +32,20 @@
 }
 
 .sidebar li {
-  background-color: #e9f6f8;
-  margin-bottom: 12px;
-  padding: px;
-  border-radius: 6px;
-  text-align: center;
+    background-color: #f3f8fb;
+    margin-bottom: 12px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    text-align: left;
+}
+
+.sidebar a {
+    display: block;
+    color: #003366;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    text-decoration: underline;
 }
 
 * {
@@ -52,6 +61,7 @@ body {
     line-height: 1.6;
     vertical-align: left;
     min-width: none;
+    background-color: white;
 }
 
 h3{
@@ -71,6 +81,7 @@ h1{
     font-size: 24px;
     font-family: serif;
     color: black;
+    text-decoration-line: underline;
 }
 
 
@@ -101,7 +112,7 @@ html {
 .content {
     flex: 1;
     padding: 40px;
-    background-color: white;
+    background-color: transparent;
 
 }
 
@@ -114,4 +125,9 @@ html {
 .content h2 {
     margin-top: 20px;
     font-size: 23px;
+}
+
+hr {
+    border: none;
+    margin: 18px 0;
 }
